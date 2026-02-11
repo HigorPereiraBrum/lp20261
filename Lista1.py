@@ -34,14 +34,25 @@ def q5():
 
 #6. Faça um programa que leia um número inteiro e imprima o seu
 #   antecessor e o seu sucessor.
-
-
+def q6():
+    x = int(input('Digite um número inteiro: '))
+    print(f'Antecessor: {x-1}')
+    print(f'Sucessor: {x+1}')
 
 #7. Faça um programa que leia o nome o endereço e o telefone de
 #   um cliente e ao final, imprima esses dados.
+def q7():
+    nome = input('Escreva seu nome: ')
+    endereco = input('Escreva seu endereço: ')
+    telefone = input('Escreva seu telefone: ')
+    print(nome,endereco,telefone)
 
 #8. Faça um programa que leia dois números inteiros e imprima a
 #   subtração deles.
+def q8():
+    x = int(input('Digite um Número: '))
+    y = int(input('Digite outro Número: '))
+    print(x-y)
 
 #9. Faça um programa que leia um número real e imprima ¼ deste número.
 
