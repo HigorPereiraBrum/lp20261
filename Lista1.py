@@ -8,10 +8,10 @@ def q1():
     print(nome)
 
 #2. Faça um programa que imprima o produto dos valores 30 e 27.
-    def q2():
-        x = 30
-        y = 27
-        print(x*y)
+def q2():
+    x = 30
+    y = 27
+    print(x*y)
 
 #3. Faça um programa que imprima a média aritmética entre os números 5, 8, 12.
 def q3():
@@ -41,18 +41,18 @@ def q6():
 
 #7. Faça um programa que leia o nome o endereço e o telefone de
 #   um cliente e ao final, imprima esses dados.
-    def q7():
-        nome = input('Escreva seu nome: ')
-        endereco = input('Escreva seu endereço: ')
-        telefone = input('Escreva seu telefone: ')
-        print(nome,endereco,telefone)
+def q7():
+    nome = input('Escreva seu nome: ')
+    endereco = input('Escreva seu endereço: ')
+    telefone = input('Escreva seu telefone: ')
+    print({nome},{endereco},{telefone})
 
 #8. Faça um programa que leia dois números inteiros e imprima a
 #   subtração deles.
 def q8():
-        x = int(input('Digite um Número: '))
-        y = int(input('Digite outro Número: '))
-        print(x-y)
+    x = int(input('Digite um Número: '))
+    y = int(input('Digite outro Número: '))
+    print(x-y)
 
 #9. Faça um programa que leia um número real e imprima ¼ deste número.
 
