@@ -4,9 +4,21 @@ Exercícios sobre os comandos básicos em Python
 
 #1. Faça um programa que imprima o seu nome.
 
+nome = 'Higor'
+print(nome)
+
 #2. Faça um programa que imprima o produto dos valores 30 e 27.
 
+x = 30
+y = 27
+print(x*y)
+
+
 #3. Faça um programa que imprima a média aritmética entre os números 5, 8, 12.
+x = 5
+y = 8
+z = 12
+print((x*y*z)/3)
 
 #4. Faça um programa que leia e imprima um número inteiro.
 
