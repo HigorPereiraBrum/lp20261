@@ -4,55 +4,55 @@ Exercícios sobre os comandos básicos em Python
 
 #1. Faça um programa que imprima o seu nome.
 def q1():
-nome = 'Higor'
-print(nome)
+    nome = 'Higor'
+    print(nome)
 
 #2. Faça um programa que imprima o produto dos valores 30 e 27.
-def q2():
-x = 30
-y = 27
-print(x*y)
+    def q2():
+        x = 30
+        y = 27
+        print(x*y)
 
 #3. Faça um programa que imprima a média aritmética entre os números 5, 8, 12.
 def q3():
-x = 5
-y = 8
-z = 12
-print((x*y*z)/3)
+    x = 5
+    y = 8
+    z = 12
+    print((x*y*z)/3)
 
 #4. Faça um programa que leia e imprima um número inteiro.
 def q4():
-x = int(input('Digite um Número: '))
-print(x)
+    x = int(input('Digite um Número: '))
+    print(x)
 
 #5. Faça um programa que leia dois números reais e os imprima.
 def q5():
-x = float(input('Digite um Número: '))
-y = float(input('Digite o Segundo Número: '))
-print(x)
-print(y)
+    x = float(input('Digite um Número: '))
+    y = float(input('Digite o Segundo Número: '))
+    print(x)
+    print(y)
 
 #6. Faça um programa que leia um número inteiro e imprima o seu
 #   antecessor e o seu sucessor.
 def q6():
-x = int(input('Digite um número inteiro: '))
-print(f'Antecessor: {x-1}')
-print(f'Sucessor: {x+1}')
+    x = int(input('Digite um número inteiro: '))
+    print(f'Antecessor: {x-1}')
+    print(f'Sucessor: {x+1}')
 
 #7. Faça um programa que leia o nome o endereço e o telefone de
 #   um cliente e ao final, imprima esses dados.
-def q7():
-nome = input('Escreva seu nome: ')
-endereco = input('Escreva seu endereço: ')
-telefone = input('Escreva seu telefone: ')
-    print(f'Seus dados são nome: {nome},endereço: {endereco}, telefone: {telefone})
+    def q7():
+        nome = input('Escreva seu nome: ')
+        endereco = input('Escreva seu endereço: ')
+        telefone = input('Escreva seu telefone: ')
+        print(nome,endereco,telefone)
 
 #8. Faça um programa que leia dois números inteiros e imprima a
 #   subtração deles.
 def q8():
         x = int(input('Digite um Número: '))
-     y = int(input('Digite outro Número: '))
-    print(f'Resultado:{x-y})
+        y = int(input('Digite outro Número: '))
+        print(x-y)
 
 #9. Faça um programa que leia um número real e imprima ¼ deste número.
 
