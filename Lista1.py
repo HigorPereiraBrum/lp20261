@@ -3,29 +3,39 @@ Exercícios sobre os comandos básicos em Python
 '''
 
 #1. Faça um programa que imprima o seu nome.
-
-nome = 'Higor'
-print(nome)
+def q1():
+    nome = 'Higor'
+    print(nome)
 
 #2. Faça um programa que imprima o produto dos valores 30 e 27.
-
-x = 30
-y = 27
-print(x*y)
-
+def q2():
+    x = 30
+    y = 27
+    print(x*y)
 
 #3. Faça um programa que imprima a média aritmética entre os números 5, 8, 12.
-x = 5
-y = 8
-z = 12
-print((x*y*z)/3)
+def q3():
+    x = 5
+    y = 8
+    z = 12
+    print((x*y*z)/3)
 
 #4. Faça um programa que leia e imprima um número inteiro.
+def q4():
+    x = int(input('Digite um Número: '))
+    print(x)
 
 #5. Faça um programa que leia dois números reais e os imprima.
+def q5():
+    x = float(input('Digite um Número: '))
+    y = float(input('Digite o Segundo Número: '))
+    print(x)
+    print(y)
 
 #6. Faça um programa que leia um número inteiro e imprima o seu
 #   antecessor e o seu sucessor.
+
+
 
 #7. Faça um programa que leia o nome o endereço e o telefone de
 #   um cliente e ao final, imprima esses dados.
@@ -92,3 +102,31 @@ print((x*y*z)/3)
 #20. Faça um programa que efetue a apresentação do valor da conversão
 #    em real (R$) de um valor lido em dólar (US$). Para isso, será
 #    necessário também ler o valor da cotação do dólar.
+
+menu = '''
+[1] - Imprimir nome
+[2] - Imprimir produto
+[3] - Imprimir média
+[4] - Imprimir inteiro
+[5] - Ler e imprimir números reais
+[6] - Antecessor e Sucessor
+[7] - Dados de cliente
+[8] - Subtração
+[9] - 1/4
+[10] - Média Aritmética
+[11] - Operações aritméticas básicas
+[12] - Quadrado de um número
+[13] - Saldo de poupança
+[14] - Área e perímetro de um retângulo
+[15] - Desconto em produto
+[16] - Reajuste Salarial
+[17] - Conversão de temperatura
+[18] - Consumo de veículo
+[19] - Juros de prestação atrasada
+[20] - Conversão dólar-real
+
+Digite a opção a ser executada: 
+'''
+
+opcao = input(menu)
+eval(f'q{opcao}()')
