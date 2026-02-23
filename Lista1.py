@@ -55,40 +55,85 @@ def q8():
     print(x-y)
 
 #9. Faça um programa que leia um número real e imprima ¼ deste número.
+def q9():
+    num = float(input('Número real: '))
+    print(num/4)
 
 #10. Faça um programa que leia três números reais e calcule a
 #    média aritmética destes números. Ao final, o programa deve
 #    imprimir o resultado do cálculo.
+def q10():
+    a = float(input('Primeiro Número: '))
+    b = float(input('Segundo Número: '))
+    c = float(input('Terceiro Número: '))
+    media = (a+b+c)/3
+    print(f'Média: {media}')
 
 #11. Faça um programa que leia dois números reais e calcule as
 #    quatro operações básicas entre estes dois números, adição,
 #    subtração,multiplicação e divisão. Ao final, o programa
 #    deve imprimir os resultados dos cálculos.
+def q11():
+    x = float(input('Primeiro número: '))
+    y = float(input('Segundo número:'))
+    resultado = f'''
+    {x} + {y} = {x+y}
+    {x} - {y} = {x-y}
+    {x} * {y} = {x*y}
+    {x} / {y} = {x/y}
+    '''
+    print(resultado)
 
 #12. Faça um programa que leia um número real e calcule o
 #    quadrado deste número. Ao final, o programa deve
 #    imprimir o resultado do cálculo.
+def q12():
+    num = float(input('Número: '))
+    print(num*num)
 
 #13. Faça um programa que leia o saldo de uma conta poupança e
 #    imprima o novo saldo, considerando um reajuste de 2%.
+def q13():
+    saldo = float(input('Saldo: R$ '))
+    print(saldo*1.02)
+
 
 #14. Faça um programa que leia a base e a altura de um retângulo
-#    e imprima o perímetro (base*2 + altura*2) e a área (base * altura).    
+#    e imprima o perímetro (base*2 + altura*2) e a área (base * altura).   
+def q14():
+    base = int(input('Base do retângulo: '))
+    altura = int(input('Altura do retângulo: '))
+    print(f'Perímetro: {base*2+altura*2}')
+    print(f'Área: {base*altura}')
 
 #15. Faça um programa que leia o valor de um produto, o percentual
 #    do desconto desejado e imprima o valor do desconto e o valor
 #    do produto subtraindo o desconto.
+def q15():
+    valor = float(input('Valor do produto: R$ '))
+    perc_desconto = int(input('Percentual do desconto: '))
+    desconto = valor * perc_desconto/100
+    valor_final = valor - desconto
+    print(f'Desconto: R$ {desconto}')
+    print(f'Valor final: R$ {valor_final}')
 
 #16. Faça um programa que calcule o reajuste do salário de um
 #    funcionário. Para isso, o programa deverá ler o salário atual
 #    do funcionário e ler o percentual de reajuste. Ao final imprimir
 #    o valor do novo salário.
+def q16():
+    salario = float(input('Salário: '))
+    perc_reajuste = float(input('Percentual de reajuste: '))
+    print(f'Novo Salário: R$ {salario*perc_reajuste/100+salario}')
 
 #17. Faça um programa que calcule a conversão entre graus centígrados
 #    e Fahrenheit. Para isso, leia o valor em centígrados e calcule
 #    com base na fórmula a seguir. Após calcular o programa deve
 #    imprimir o resultado da conversão.
 #    F = (9 x C + 160) / 5
+def q17():
+    c = float(input('Graus Centígrados: '))
+    print(f'Fahrenheit: {(9*c+160)/5}')
 
 #18. Faça um programa que calcule a quantidade de litros de combustível
 #    consumidos em uma viagem, sabendo-se que o carro tem autonomia de
@@ -102,6 +147,18 @@ def q8():
 #    • L = Litros de combustível consumidos
 #    Ao final, o programa deverá imprimir a distância percorrida e a
 #    quantidade de litros consumidos na viagem.
+def litros_consumidos(distancia, media_consumo):
+    return distancia/media_consumo
+
+def distancia_percorrida(tempo, velocidade):
+    return tempo*velocidade
+
+def q18():
+    tempo = float(input('Tempo decorrido na viagem(horas): '))
+    velocidade = int(input('Velocidade média (km/h): '))
+    print(f'Distância percorrida: {distancia_percorrida(tempo,velocidade)}')
+    print(f'Litros consumidos: {litros_consumidos(distancia_percorrida(tempo,velocidade),12)}')
+
 
 #19. Faça um programa que calcule o valor de uma prestação em atraso.
 #    Para isso, o programa deve ler o valor da prestação vencida, a
@@ -109,6 +166,7 @@ def q8():
 #    programa deve imprimir o valor da prestação atrasada, o período
 #    de atraso, os juros que serão cobrados pelo período de atraso, o
 #    valor da prestação acrescido dos juros. Considere juros simples.
+
 
 #20. Faça um programa que efetue a apresentação do valor da conversão
 #    em real (R$) de um valor lido em dólar (US$). Para isso, será
