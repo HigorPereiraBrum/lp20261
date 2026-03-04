@@ -37,6 +37,11 @@ def exemploCaso():      # serve apenas para valores conhecidos (poucos) e exatos
 
 #1. Faça um programa que leia dois valores numéricos inteiros e efetue
 #   a adição, caso o resultado seja maior que 10, apresentá-lo.
+x = int(input('Digite um Número: '))
+y = int(input('Digite um Número: '))
+z = x+y
+    if x >10
+    print(x)
 
 #2. Faça um programa que leia dois valores inteiros e efetue a adição.
 #   Caso o valor somado seja maior que 20, este deverá ser apresentado
@@ -187,3 +192,31 @@ except ValueError:
     print('O número da questão deve ser numérico (inteiro)!')
 except Exception as e:
     print(e)
+
+    menu = '''
+[1] - Imprimir nome
+[2] - Imprimir produto
+[3] - Imprimir média
+[4] - Imprimir inteiro
+[5] - Ler e imprimir números reais
+[6] - Antecessor e Sucessor
+[7] - Dados de cliente
+[8] - Subtração
+[9] - 1/4
+[10] - Média Aritmética
+[11] - Operações aritméticas básicas
+[12] - Quadrado de um número
+[13] - Saldo de poupança
+[14] - Área e perímetro de um retângulo
+[15] - Desconto em produto
+[16] - Reajuste Salarial
+[17] - Conversão de temperatura
+[18] - Consumo de veículo
+[19] - Juros de prestação atrasada
+[20] - Conversão dólar-real
+
+Digite a opção a ser executada: 
+'''
+
+opcao = input(menu)
+eval(f'q{opcao}()')
