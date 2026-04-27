@@ -11,7 +11,7 @@ def q1() -> None:
     numeros: list = [random.randrange(200) for _ in range(15)]
     print (numeros)
     numero: int = int(input('Digite o numero a ser localizado na lista: '))
-    
+
     try:
         posicao = numeros.index(numero)
     except ValueError:
@@ -20,6 +20,20 @@ def q1() -> None:
         print(f'Número localizado na posição{posicao}')
 #2. Faça um programa que armazene 10 letras em uma lista e imprima uma listagem
 #numerada. (ASCII 65-90)
+def q2() -> None:
+    letras = []
+for _ in range(10):
+    # random.randint sorteia um número entre 65 e 90
+    codigo_ascii = random.randint(65, 90)
+    letras.append(chr(codigo_ascii))
+print("--- Listagem de Letras ---")
+for i, letra in enumerate(letras, start=1):
+    print(f"{i}. {letra}")
+
+
+
+
+
 
 #2.1 Faça um programa que peça ao usuário para informar a qtde de caracteres
 # para a geração de uma senha aleatória. Ao final o programa deve exibir a
