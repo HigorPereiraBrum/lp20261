@@ -7,8 +7,17 @@ Lista de Exercícios referentes a coleções e arquivos em python
 #permita que o usuário digite um número inteiro para ser buscado na lista, se
 #for encontrado o programa deve imprimir a posição desse número na lista, caso
 #contrário, deve imprimir a mensagem: "Nao encontrado!".
-
-
+def q1() -> None:
+    numeros: list = [random.randrange(200) for _ in range(15)]
+    print (numeros)
+    numero: int = int(input('Digite o numero a ser localizado na lista: '))
+    
+    try:
+        posicao = numeros.index(numero)
+    except ValueError:
+        print('Número não encontrado')
+    else:
+        print(f'Número localizado na posição{posicao}')
 #2. Faça um programa que armazene 10 letras em uma lista e imprima uma listagem
 #numerada. (ASCII 65-90)
 
