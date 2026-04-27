@@ -21,30 +21,32 @@ def q1() -> None:
 #2. Faça um programa que armazene 10 letras em uma lista e imprima uma listagem
 #numerada. (ASCII 65-90)
 def q2() -> None:
-    letras = []
-for _ in range(10):
-    # random.randint sorteia um número entre 65 e 90
-    codigo_ascii = random.randint(65, 90)
-    letras.append(chr(codigo_ascii))
-print("--- Listagem de Letras ---")
-for i, letra in enumerate(letras, start=1):
-    print(f"{i}. {letra}")
-
-
-
-
-
-
+    letras: list = [chr(random.randrange(65,91))for _ in range(10)]
+    for posicao, letra in enumerate(letras):
+        print(f'[{posicao}]:{letra}')
 #2.1 Faça um programa que peça ao usuário para informar a qtde de caracteres
 # para a geração de uma senha aleatória. Ao final o programa deve exibir a
 # senha sugerida. (ASCII 40-126)
 
 #3. Construa uma programa que armazene 15 números em uma lista e imprima
 #uma listagem numerada contendo o número e uma das mensagens: par ou ímpar.
-
+def q3() -> None:
+    numeros: list = [random.randint(1, 100) for _ in range(15)]
+    print("Listagem Numerada:")
+    print("-" * 30)
+    for posicao, num in enumerate(numeros):
+        tipo = "par" if num % 2 == 0 else "ímpar"
+        print(f"[{posicao}]: {num} é {tipo}")
 #4. Faça um programa que armazene 8 números em uma lista e imprima todos os
 #números. Ao final, imprima o total de números múltiplos de seis.
-
+def q4() -> None:
+    numeros: list = [random.randint(1, 100) for _ in range(8)]
+    print(f"Lista de números: {numeros}")
+    total_multiplos_seis = 0
+    for num in numeros:
+        if num % 6 == 0:
+            total_multiplos_seis += 1
+    print(f"Total de números múltiplos de seis: {total_multiplos_seis}")
 #5. Faça um programa que armazene as notas das provas 1 e 2 de 15 alunos. Calcule
 #e armazene a média arredondada. Armazene também a situação do aluno: 1-
 #Aprovado ou 2-Reprovado. Ao final o programa deve imprimir uma listagem
