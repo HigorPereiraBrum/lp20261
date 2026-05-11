@@ -189,7 +189,7 @@ def q20() -> None:
 
 # Menu Principal
 try:
-    questao = inputint('Questão a ser executada (1-20 ou 21): ')
+    questao = inputint('Questão a ser executada (1-20 ou 21,31): ')
     func_name = f'q{questao}'
     if func_name in locals():
         locals()[func_name]()
