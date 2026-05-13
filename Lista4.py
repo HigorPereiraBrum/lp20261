@@ -65,6 +65,25 @@ def q5() -> None:
     for a in alunos:
         print(f"{a['mat']}\t{a['nome']}\t{a['n1']}\t{a['n2']}\t{a['md']}\t{a['st']}")
 
+def q51() ->None:
+    alunos: list[dict] = []
+    with open ('resultado_q51.txt','a') as arquivo:
+        arquivo.write('=======================================================/n')
+    for c in range(1, 16):
+        n1 = round(random.random() * 10, 1)
+        n2 = round(random.random() * 10, 1)
+        media = round((n1 + n2) / 2, 1)
+        alunos.append({
+            "mat": c,
+            "nome": gerar_palavra(max=5),
+            "n1": n1, "n2": n2, "md": media,
+            "st": "Aprovado" if media >= 6 else "Reprovado"
+        })
+    print("MAT\tNOME\tN1\tN2\tMD\tST")
+    for a in alunos:
+        print(f"{a['mat']}\t{a['nome']}\t{a['n1']}\t{a['n2']}\t{a['md']}\t{a['st']}")
+
+
 # 6. Reajuste salarial de 8%
 def q6() -> None:
     salarios = [round(random.uniform(1412, 5000), 2) for _ in range(20)]
@@ -189,7 +208,7 @@ def q20() -> None:
 
 # Menu Principal
 try:
-    questao = inputint('Questão a ser executada (1-20 ou 21,31): ')
+    questao = inputint('Questão a ser executada (1-20 ou 21,51): ')
     func_name = f'q{questao}'
     if func_name in locals():
         locals()[func_name]()
